@@ -11,7 +11,7 @@ function verificarNivel(vitorias) {
 function calculadoraRank(vitorias, derrotas) {
     const saldoVitorias = vitorias - derrotas;
     const nivel = verificarNivel(saldoVitorias);
-    console.log(`O Herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`);
+    return `O Herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`;
 }
 
-calculadoraRank(85, 20);
+console.log(calculadoraRank(85, 20));

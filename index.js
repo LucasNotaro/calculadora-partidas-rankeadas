@@ -1,3 +1,6 @@
+let vitorias = 89;
+let derrotas = 21;
+
 function verificarNivel(vitorias) {
     if (vitorias < 10) return "Ferro";
     if (vitorias <= 20) return "Bronze";
@@ -14,4 +17,6 @@ function calculadoraRank(vitorias, derrotas) {
     return `O Herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`;
 }
 
-console.log(calculadoraRank(85, 20));
+const resultado = calculadoraRank(vitorias, derrotas);
+
+console.log(resultado);

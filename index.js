@@ -8,4 +8,10 @@ function verificarNivel(vitorias) {
     return "Imortal";
 }
 
-console.log(verificarNivel(90));
+function calculadoraRank(vitorias, derrotas) {
+    const saldoVitorias = vitorias - derrotas;
+    const nivel = verificarNivel(saldoVitorias);
+    console.log(`O Herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`);
+}
+
+calculadoraRank(85, 20);

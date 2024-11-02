@@ -1,13 +1,13 @@
 let vitorias = 89;
 let derrotas = 21;
 
-function verificarNivel(vitorias) {
-    if (vitorias < 10) return "Ferro";
-    if (vitorias <= 20) return "Bronze";
-    if (vitorias <= 50) return "Prata";
-    if (vitorias <= 80) return "Ouro";
-    if (vitorias <= 90) return "Diamante";
-    if (vitorias <= 100) return "Lendário";
+function verificarNivel(Saldovitorias) {
+    if (Saldovitorias < 10) return "Ferro";
+    if (Saldovitorias <= 20) return "Bronze";
+    if (Saldovitorias <= 50) return "Prata";
+    if (Saldovitorias <= 80) return "Ouro";
+    if (Saldovitorias <= 90) return "Diamante";
+    if (Saldovitorias <= 100) return "Lendário";
     return "Imortal";
 }
 
